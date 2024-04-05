@@ -1,0 +1,408 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  }
+  
+  h1 {
+  font-size: 3em;
+  margin: 0;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  }
+  
+  nav ul li {
+  display: inline;
+  margin-right: 20px;
+  }
+  
+  nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+  color: #ccc;
+  }
+  
+  main {
+  padding-top: 80px;
+  }
+  
+  section {
+  margin-bottom: 50px;
+  padding: 40px;
+  background-color: #222;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  
+  /* About Me Section */
+  
+  .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  
+  .profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 5px solid #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about-text {
+  flex: 1;
+  }
+  
+  .about-text p {
+  margin-bottom: 20px;
+  color: #fff;
+  }
+  
+  .button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff4d4d;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+  background-color: #e60000;
+  }
+  
+  @media (max-width: 768px) {
+  .about-content {
+  flex-direction: column;
+  }
+  
+  .profile-pic {
+  margin: 0 auto 20px;
+  }
+  }
+  
+  /* Additional styling for project articles */
+  
+  .project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  
+  .project {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .project:hover {
+  transform: translateY(-5px);
+  }
+  
+  .project img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #333;
+  }
+  
+  .project-details {
+  padding: 20px;
+  }
+  
+  .project-details h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+  }
+  
+  .project-details p {
+  margin-bottom: 10px;
+  color: #666;
+  }
+  
+  /* Additional styling for experience articles */
+  
+  .experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  
+  .experience {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  }
+  
+  .experience h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+  }
+  
+  .experience h4 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #666;
+  }
+  
+  .experience p {
+  margin-bottom: 10px;
+  color: #888;
+  }
+  
+  .experience ul {
+  margin-bottom: 0;
+  }
+  
+  .experience ul li {
+  margin-bottom: 5px;
+  color: #888;
+  }
+  
+  /* Additional styling for skills */
+  
+  .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  
+  .skill {
+  width: calc(33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  }
+  
+  .skill h3 {
+  font-size: 1.8em;
+  margin-bottom: 0;
+  color: #333;
+  }
+  
+  .skill p {
+  margin-bottom: 10px;
+  color: #666;
+  }
+  
+  /* Additional styling for achievements */
+  
+  #achievements {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  }
+  
+  .achievement-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  }
+  
+  .achievement {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .achievement:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .achievement h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+  }
+  
+  .achievement p {
+  margin-bottom: 0;
+  color: #666;
+  }
+  
+  /* Styling for Achievement Titles */
+  .achievement h3 {
+  position: relative;
+  }
+  
+  .achievement h3::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff4d4d; /* Change this to your desired color */
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  }
+  
+  .achievement:hover h3::after {
+  transform: scaleX(1);
+  }
+  
+  /* Additional styling for contact section */
+  
+  #contact {
+  background-color: #fff;
+  padding: 40px 0;
+  }
+  
+  .contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .contact-item {
+  margin-right: 20px;
+  }
+  
+  .contact-item img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  }
+  
+  .contact-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-item a:hover {
+  color: #666;
+  }
+  /* Adjustments for visibility */
+  
+  header {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  }
+  
+  header h1 {
+  color: #fff; /* White text */
+  }
+  
+  /* Additional styling for achievements and experience sections */
+  
+  .achievement {
+  color: #333; /* Dark text color */
+  }
+  
+  .experience {
+  color: #333; /* Dark text color */
+  }
+  /* Adjustments for visibility */
+  
+  #achievements h2 {
+  color: #333; /* Dark text color */
+  }
+  /* Adjustments for visibility and style */
+  
+  #contact h2 {
+  color: #333; /* Dark text color */
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 30px; /* Add some bottom margin for spacing */
+  }
+  /* Hover effects for contact items */
+  
+  .contact-item:hover {
+  transform: translateY(-5px); /* Move the item up slightly on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition */
+  }
+  
+  /* Animation for h2 */
+  
+  #contact h2 {
+  color: #333; /* Dark text color */
+  text-align: center; /* Center-align the heading */
+  margin-bottom: 30px; /* Add some bottom margin for spacing */
+  animation: slideInUp 0.5s ease; /* Add a slide-in animation */
+  }
+  
+  @keyframes slideInUp {
+  from {
+  opacity: 0;
+  transform: translateY(50px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+  nav ul li a:hover {
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  transition: background-color 0.3s, color 0.3s;
+  }
+  .project:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .experience:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .skill:hover {
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+  }
+  .achievement:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+  transition: transform 0.3s, background-color 0.3s;
+  }
